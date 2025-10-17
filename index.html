@@ -12,11 +12,11 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo"><img src="logo.svg" alt="Naala Africa Labs Logo">Naala Africa Labs</a>
+                <a href="#" class="logo"><img src="logo.png" alt="Naala Africa Labs Logo">Naala <span class="logo-secondary">Africa Labs</span></a>
                 <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,44 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Naala Africa Labs is a pioneering AI startup based in Kenya, focusing on building sustainable AI systems tailored to Africa's unique needs. We provide cutting-edge AI solutions, professional training, and consulting services to help African industries thrive.</p>
+            <p class="section-intro">Naala Africa Labs is a pioneering AI startup based in Kenya, founded in 2024. We focus on building sustainable AI systems tailored to Africa's unique needs. We provide cutting-edge AI solutions, professional training, and consulting services to help African industries thrive.</p>
+            
+            <div class="mission-vision">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses and individuals across Africa with AI solutions that are accessible, impactful, and transformative.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>To see Africa fully empowered by AI technologies, enhancing productivity, sustainability, and opportunities across the continent.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="reasons-grid">
+                <div class="reason">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Tailored Solutions</h3>
+                    <p>We customize our AI tools and strategies to meet the unique needs of your business, ensuring impactful results.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Expert Team</h3>
+                    <p>Our skilled professionals bring extensive experience and knowledge, guiding you through successful AI integration.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Data-Driven Approach</h3>
+                    <p>We emphasize building a data-driven culture to enhance decision-making and innovation within your organization.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Local Insight</h3>
+                    <p>We understand the African market and design solutions that address its specific challenges and opportunities.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -41,44 +78,74 @@
         <div class="container">
             <h2>Our Services</h2>
             <p class="section-intro">We offer a comprehensive range of AI services designed to help businesses innovate and grow. Explore our key offerings below.</p>
-            <div class="services-grid">
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="AI Solutions">
+            
+            <div class="service-item">
+                <div class="service-item__image">
+                    <img src="images/custom-ai-solutions.jpg" alt="Custom AI Solutions">
+                </div>
+                <div class="service-item__text">
                     <h3>Custom AI Solutions</h3>
                     <p>We develop bespoke AI tools to help businesses streamline processes, boost productivity, and solve complex challenges across various industries.</p>
                 </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="AI Training">
+            </div>
+
+            <div class="service-item service-item--reversed">
+                <div class="service-item__image">
+                    <img src="images/ai-training.jpg" alt="AI Training">
+                </div>
+                <div class="service-item__text">
                     <h3>AI Training & Workshops</h3>
                     <p>Our practical AI and data science courses empower individuals and organizations with the skills needed to stay competitive in a tech-driven world.</p>
                 </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="AI Consulting">
+            </div>
+
+            <div class="service-item">
+                <div class="service-item__image">
+                    <img src="images/ai-consulting.jpg" alt="AI Consulting">
+                </div>
+                <div class="service-item__text">
                     <h3>Strategic AI Consulting</h3>
                     <p>We guide companies through AI integration, helping them build a data-driven culture, optimize operations, and drive innovation with tailored strategies.</p>
                 </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="Conversational AI">
+            </div>
+
+            <div class="service-item service-item--reversed">
+                <div class="service-item__image">
+                    <img src="images/conversational-ai.jpg" alt="Conversational AI">
+                </div>
+                <div class="service-item__text">
                     <h3>Conversational AI</h3>
                     <p>We build intelligent chatbots and voice agents that provide exceptional customer service and automate communication on your data.</p>
                 </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="Computer Vision">
+            </div>
+
+            <div class="service-item">
+                <div class="service-item__image">
+                    <img src="images/computer-vision.jpg" alt="Computer Vision">
+                </div>
+                <div class="service-item__text">
                     <h3>Computer Vision</h3>
                     <p>Our computer vision solutions enable machines to interpret and understand the visual world, unlocking new possibilities in automation and analytics.</p>
                 </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200" alt="Predictive Analytics">
+            </div>
+
+            <div class="service-item service-item--reversed">
+                <div class="service-item__image">
+                    <img src="images/predictive-analytics.jpg" alt="Predictive Analytics">
+                </div>
+                <div class="service-item__text">
                     <h3>Predictive Analytics</h3>
                     <p>We leverage your data to build predictive models that provide actionable insights, helping you make smarter business decisions.</p>
                 </div>
             </div>
+
         </div>
     </section>
     
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
+            <p class="section-intro">Have a question or want to work with us? Send us a message below or email us at <a href="mailto:naalaafricalabs@gmail.com">naalaafricalabs@gmail.com</a>.</p>
             <form>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -101,8 +168,9 @@
                 <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2025 Naala Africa Labs. All rights reserved.</p>
+            <p>&copy; 2024 Naala Africa Labs. All rights reserved.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
