@@ -1,7 +1,8 @@
+
 // Typing animation for hero text
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('#typed-text', {
-        strings: ['AI Solutions.', 'Data Science.', 'Automation.', 'Innovation.'],
+        strings: ['innovation.', 'efficiency.', 'growth.'],
         typeSpeed: 70, // Slower typing speed
         backSpeed: 30,
         loop: true,
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         backDelay: 2000,
     });
 });
+
 
 // Intersection Observer for revealing elements on scroll
 const revealElements = document.querySelectorAll('section, .section-divider, .service-item, .reason, .mission-vision, .contact-grid, .about-item');
@@ -26,6 +28,40 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 
 revealElements.forEach(element => {
     revealObserver.observe(element);
+});
+
+// Mobile navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('nav ul a');
+
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    });
+});
+
+// Header scroll effect
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Hero section scroll effect
+const hero = document.querySelector('.hero');
+const heroContent = document.querySelector('.hero-content');
+
+window.addEventListener('scroll', () => {
+    const scrollPercent = Math.min(window.scrollY / (hero.offsetHeight * 0.8), 1);
+    hero.style.setProperty('--hero-scroll', scrollPercent);
 });
 
 // Back to top button
