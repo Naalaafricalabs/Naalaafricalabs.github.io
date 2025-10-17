@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <div class="preloader"></div>
     <header>
         <div class="container">
             <nav>
@@ -36,30 +37,46 @@
         </div>
     </section>
     
-        <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p class="section-intro">Naala Africa Labs, founded in 2024, is a pioneering AI startup based in Kenya with a mission to empower the continent. We are more than just a technology company; we are innovators and partners dedicated to building sustainable, cutting-edge AI systems that are meticulously tailored to Africa's unique needs and opportunities.</p>
-                
-                <div class="mission-vision">
-                    <div class="mission">
-                        <h3>Our Mission</h3>
-                        <p>To empower businesses and individuals across Africa with AI solutions that are accessible, impactful, and transformative.</p>
-                    </div>
-                    <div class="vision">
-                        <h3>Our Vision</h3>
-                        <p>To see Africa fully empowered by AI technologies, enhancing productivity, sustainability, and opportunities across the continent.</p>
-                    </div>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-item">
+                <div class="about-item__image">
+                    <img src="images/about-us-image.jpg" alt="About Naala Africa Labs">
+                </div>
+                <div class="about-item__text">
+                    <h3>Who We Are</h3>
+                    <p>Naala Africa Labs, founded in 2024, is a pioneering AI startup based in Kenya with a mission to empower the continent. We are more than just a technology company; we are innovators and partners dedicated to building sustainable, cutting-edge AI systems that are meticulously tailored to Africa's unique needs and opportunities.</p>
                 </div>
             </div>
-            <div class="section-divider divider-flipped">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
+
+            <div class="about-item about-item--reversed">
+                <div class="about-item__icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <div class="about-item__text">
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses and individuals across Africa with AI solutions that are accessible, impactful, and transformative.</p>
+                </div>
             </div>
-        </section>
-    
-        <section id="why-choose-us">
+
+            <div class="about-item">
+                <div class="about-item__icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="about-item__text">
+                    <h3>Our Vision</h3>
+                    <p>To see Africa fully empowered by AI technologies, enhancing productivity, sustainability, and opportunities across the continent.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider divider-flipped">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section id="why-choose-us">
             <div class="container">
                 <h2>Why Choose Us?</h2>
                 <div class="reasons-grid">
@@ -90,73 +107,75 @@
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
             </div>
-        </section>    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p class="section-intro">We offer a comprehensive range of AI services designed to help businesses innovate and grow. Explore our key offerings below.</p>
             
-            <div class="service-item">
-                <div class="service-item__image">
-                    <img src="images/custom-ai-solutions.jpg" alt="Custom AI Solutions">
-                </div>
-                <div class="service-item__text">
-                    <h3>Custom AI Solutions</h3>
-                    <p>We develop bespoke AI tools to help businesses streamline processes, boost productivity, and solve complex challenges across various industries.</p>
-                </div>
-            </div>
-
-            <div class="service-item service-item--reversed">
-                <div class="service-item__image">
-                    <img src="images/ai-training.jpg" alt="AI Training">
-                </div>
-                <div class="service-item__text">
-                    <h3>AI Training & Workshops</h3>
-                    <p>Our practical AI and data science courses empower individuals and organizations with the skills needed to stay competitive in a tech-driven world.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-item__image">
-                    <img src="images/ai-consulting.jpg" alt="AI Consulting">
-                </div>
-                <div class="service-item__text">
-                    <h3>Strategic AI Consulting</h3>
-                    <p>We guide companies through AI integration, helping them build a data-driven culture, optimize operations, and drive innovation with tailored strategies.</p>
-                </div>
-            </div>
-
-            <div class="service-item service-item--reversed">
-                <div class="service-item__image">
-                    <img src="images/conversational-ai.jpg" alt="Conversational AI">
-                </div>
-                <div class="service-item__text">
-                    <h3>Conversational AI</h3>
-                    <p>We build intelligent chatbots and voice agents that provide exceptional customer service and automate communication on your data.</p>
-                </div>
-            </div>
-
-            <div class="service-item">
-                <div class="service-item__image">
-                    <img src="images/computer-vision.jpg" alt="Computer Vision">
-                </div>
-                <div class="service-item__text">
-                    <h3>Computer Vision</h3>
-                    <p>Our computer vision solutions enable machines to interpret and understand the visual world, unlocking new possibilities in automation and analytics.</p>
-                </div>
-            </div>
-
-            <div class="service-item service-item--reversed">
-                <div class="service-item__image">
-                    <img src="images/predictive-analytics.jpg" alt="Predictive Analytics">
-                </div>
-                <div class="service-item__text">
-                    <h3>Predictive Analytics</h3>
-                    <p>We leverage your data to build predictive models that provide actionable insights, helping you make smarter business decisions.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+                <section id="services">
+                    <div class="container">
+                        <h2>Our Services</h2>
+                        <p class="section-intro">We offer a comprehensive range of AI services designed to help businesses innovate and grow. Explore our key offerings below.</p>
+                        
+                        <div class="service-item">
+                            <div class="service-item__image">
+                                <img src="images/custom-ai-solutions.jpg" alt="Custom AI Solutions">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Custom AI Solutions</h3>
+                                <p>We develop bespoke AI tools to help businesses streamline processes, boost productivity, and solve complex challenges across various industries.</p>
+                            </div>
+                        </div>
+            
+                        <div class="service-item service-item--reversed">
+                            <div class="service-item__image">
+                                <img src="images/ai-training.jpg" alt="AI Training">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>AI Training & Workshops</h3>
+                                <p>Our practical AI and data science courses empower individuals and organizations with the skills needed to stay competitive in a tech-driven world.</p>
+                            </div>
+                        </div>
+            
+                        <div class="service-item">
+                            <div class="service-item__image">
+                                <img src="images/ai-consulting.jpg" alt="AI Consulting">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Strategic AI Consulting</h3>
+                                <p>We guide companies through AI integration, helping them build a data-driven culture, optimize operations, and drive innovation with tailored strategies.</p>
+                            </div>
+                        </div>
+            
+                        <div class="service-item service-item--reversed">
+                            <div class="service-item__image">
+                                <img src="images/conversational-ai.jpg" alt="Conversational AI">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Conversational AI</h3>
+                                <p>We build intelligent chatbots and voice agents that provide exceptional customer service and automate communication on your data.</p>
+                            </div>
+                        </div>
+            
+                        <div class="service-item">
+                            <div class="service-item__image">
+                                <img src="images/computer-vision.jpg" alt="Computer Vision">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Computer Vision</h3>
+                                <p>Our computer vision solutions enable machines to interpret and understand the visual world, unlocking new possibilities in automation and analytics.</p>
+                            </div>
+                        </div>
+            
+                        <div class="service-item service-item--reversed">
+                            <div class="service-item__image">
+                                <img src="images/predictive-analytics.jpg" alt="Predictive Analytics">
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Predictive Analytics</h3>
+                                <p>We leverage your data to build predictive models that provide actionable insights, helping you make smarter business decisions.</p>
+                            </div>
+                        </div>
+            
+                    </div>
+                </section>
+                
     
     <section id="contact">
         <div class="container">
@@ -175,7 +194,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form novalidate>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -205,6 +224,7 @@
             <p>&copy; 2024 Naala Africa Labs. All rights reserved.</p>
         </div>
     </footer>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
     <script src="particles.js"></script>
     <script src="main.js"></script>
 </body>
