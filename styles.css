@@ -799,7 +799,24 @@ footer {
         font-size: 2.5rem;
     }
 
-    .hero p {
-        font-size: 1.1rem;
+    
+
+        .hero p {
+
+            font-size: 1.1rem;
+
+        }
+
+    
+
+        .footer-nav a {
+
+            display: block;
+
+            margin: 0.5rem 0;
+
+        }
+
     }
-}
+
+    
