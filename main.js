@@ -1,5 +1,5 @@
 // Intersection Observer for revealing elements on scroll
-const revealElements = document.querySelectorAll('.service-item');
+const revealElements = document.querySelectorAll('.service-item, .reason, .mission-vision, .contact-grid');
 
 const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
