@@ -1,3 +1,15 @@
+// Typing animation for hero text
+document.addEventListener('DOMContentLoaded', function() {
+    new Typed('#typed-text', {
+        strings: ['AI Solutions.', 'Data Science.', 'Automation.', 'Innovation.'],
+        typeSpeed: 70, // Slower typing speed
+        backSpeed: 30,
+        loop: true,
+        startDelay: 500,
+        backDelay: 2000,
+    });
+});
+
 // Intersection Observer for revealing elements on scroll
 const revealElements = document.querySelectorAll('.service-item, .reason, .mission-vision, .contact-grid');
 

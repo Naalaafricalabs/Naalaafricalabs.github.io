@@ -18,7 +18,9 @@ window.onload = function() {
     constructor() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 3 + 2; // Increased particle size
+      this.size = Math.random() * 1 + 1; // Start with a small size
+      this.maxSize = Math.random() * 3 + 2; // Max size for this particle
+      this.growing = true; // Direction flag
       this.speedX = Math.random() * 2 - 1;
       this.speedY = Math.random() * 2 - 1;
       this.color = Math.random() > 0.5 ? primaryColor : secondaryColor;
@@ -27,7 +29,18 @@ window.onload = function() {
       this.x += this.speedX;
       this.y += this.speedY;
 
-      if (this.size > 0.2) this.size -= 0.01;
+      // Pulsing effect logic
+      if (this.growing) {
+        this.size += 0.05;
+        if (this.size >= this.maxSize) {
+          this.growing = false;
+        }
+      } else {
+        this.size -= 0.05;
+        if (this.size <= 0.2) {
+          this.growing = true;
+        }
+      }
 
       if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
       if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;

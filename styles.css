@@ -46,7 +46,7 @@ nav .logo {
 }
 
 nav .logo img {
-    height: 55px; /* Set a fixed height */
+    height: 60px; /* Set a fixed height */
     width: auto; /* Maintain aspect ratio */
     margin-right: 10px;
 }
@@ -145,9 +145,13 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem; /* Increased font size */
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+#typed-text {
+    color: #ff6600; /* Match button color */
 }
 
 .hero p {
@@ -158,21 +162,51 @@ nav ul li a:hover {
 .btn {
     background: #ff6600; /* Secondary Color */
     color: #fff;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2.5rem; /* Made button bigger */
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Increased font size */
     transition: background 0.3s;
     font-weight: 600;
 }
 
 .btn:hover {
-    background: #e65c00; /* Darker shade of secondary color */
+    background: #e65c00;
+}
+
+.section-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px; /* Adjust height of the wave */
+}
+
+.section-divider .shape-fill {
+    fill: #fff; /* Color of the wave, should match the next section */
+}
+
+.divider-flipped {
+    transform: rotate(180deg);
+}
+
+/* This is for the divider after the "Why Choose Us" section */
+#why-choose-us + .section-divider .shape-fill {
+    fill: #f8f9fa;
 }
 
 /* Sections */
 section {
     padding: 5rem 0; /* Increased padding for more whitespace */
+    position: relative; /* Needed for dividers */
 }
 
 section h2 {
@@ -255,6 +289,11 @@ section h2 {
     font-size: 3rem;
     color: #ff6600; /* Secondary color for icons */
     margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reason:hover i {
+    transform: scale(1.1); /* Add a subtle zoom effect on hover */
 }
 
 .reason h3 {
